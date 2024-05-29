@@ -10,3 +10,14 @@
 .backBtn:hover{
   background-color: #e00000;
 }
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 30%;
+    height: 20%;
+  }
+}
