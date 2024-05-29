@@ -1,0 +1,63 @@
+
+<div class="container my-2 ds-heading">
+  <h3> Linked List </h3>
+  <button class="btn backBtn" [routerLink]="['']"> X </button>
+</div>
+
+<hr class="my-2 container">
+
+<div class="container my-2 linkedListContent">
+  <p>A linked list is a fundamental data structure consisting of a sequence of elements, called nodes,
+    where each node contains a reference (or link) to the next node in the sequence.
+    Linked lists are dynamic data structures, meaning that the size of the list can grow or shrink during the program's execution.</p>
+
+  <h5>Types of Linked List : </h5>
+
+  <ul>
+    <li>
+      <b>Singly Linked List:</b>
+      <p> Each node contains a data element and a reference to the next node in the sequence.
+        The last node typically points to null to indicate the end of the list.</p>
+
+      <b>Doubly Linked List:</b>
+      <p> Each node contains a data element and references to both the next and previous nodes in the sequence.
+        This allows traversal of the list in both forward and backward directions.</p>
+
+      <b>Circular Linked List:</b>
+      <p> In this type of linked list, the last node points back to the first node, forming a circular structure.
+        Circular linked lists can be singly or doubly linked.</p>
+    </li>
+  </ul>
+
+  <hr class="my-2">
+</div>
+
+<div class="container my-3 linkedlistTypes">
+
+  <!-- linked-list-tabs.component.html -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item" (click)="switchTab('singlyLinkedList')">
+      <a class="nav-link active" data-toggle="tab" [class.active]="activeTab === 'singlyLinkedList'">Singly Linked List</a>
+    </li>
+    <li class="nav-item" (click)="switchTab('doublyLinkedList')">
+      <a class="nav-link" data-toggle="tab" [class.active]="activeTab === 'doublyLinkedList'">Doubly Linked List</a>
+    </li>
+    <li class="nav-item" (click)="switchTab('circularLinkedList')">
+      <a class="nav-link" data-toggle="tab" [class.active]="activeTab === 'circularLinkedList'">Circular Linked List</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade" [ngClass]="{'show active': activeTab == 'singlyLinkedList'}" [id]="activeTab">
+      <p>1</p>
+    </div>
+    <div class="tab-pane fade" [ngClass]="{'show active': activeTab == 'doublyLinkedList'}"  [id]="activeTab">
+      <p>2</p>
+    </div>
+    <div class="tab-pane fade" [ngClass]="{'show active': activeTab == 'circularLinkedList'}"  [id]="activeTab">
+      <p>3</p>
+    </div>
+  </div>
+
+
+</div>

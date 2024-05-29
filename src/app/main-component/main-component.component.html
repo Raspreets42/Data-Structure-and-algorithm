@@ -1,0 +1,33 @@
+<div class="container headingDiv">
+  <h3 class="my-2 text-center"> Data Structure With Javascript </h3>
+  <hr>
+</div>
+<div class="container bodyDiv">
+  <p class="description">
+    A data structure is a way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently.
+    It defines the relationship between the data elements and facilitates operations like insertion, deletion, traversal, and searching.
+  </p>
+
+  <h5>Data structures can be categorized into two main types:</h5>
+
+  <ul>
+    <li>
+      <b>Primitive Data Structures:</b>
+      <p>These are the basic data structures provided by the programming language, such as integers, floating-point numbers, characters,
+        and pointers.</p>
+    </li>
+    <li>
+      <b>Abstract Data Types (ADTs):</b>
+      <p>ADTs are high-level data structures that are defined by the user and implemented using primitive data structures.
+        Examples include lists, stacks, queues, trees, graphs, etc.</p>
+    </li>
+  </ul>
+  <hr>
+</div>
+<div class="container dsListDiv">
+  <h5 class="my2">JavaScript provides several built-in data structures : </h5>
+
+  <div class="ds-buttons">
+    <button [class]="ds.btnClass" *ngFor="let ds of dsList" [routerLink]="[ds.url]"> {{ds.name}} </button>
+  </div>
+</div>
