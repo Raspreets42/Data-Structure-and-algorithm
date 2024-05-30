@@ -11,13 +11,14 @@
   background-color: #e00000;
 }
 
-.image{
+.media-stack{
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  img{
-    width: 30%;
-    height: 20%;
+  .video{
+    video{
+      width: 60% !important;
+      height: 40% !important;
+    }
   }
 }
+
